@@ -1,23 +1,23 @@
 /* DocuMiner landing — Pro/Enterprise dark theme */
 
 :root {
-  --bg: #0B1220;
-  --bg-elev: #111A2E;
-  --bg-elev-2: #16213A;
-  --border: #1F2A44;
-  --border-soft: #182039;
-  --text: #E6EDF7;
-  --text-muted: #9AA7BD;
-  --text-faint: #6B7891;
-  --accent: #3B82F6;
-  --accent-hi: #60A5FA;
-  --accent-soft: rgba(59, 130, 246, 0.12);
-  --success: #22C55E;
+  --bg: #0A1614;
+  --bg-elev: #102621;
+  --bg-elev-2: #14332B;
+  --border: #1F4A3F;
+  --border-soft: #163930;
+  --text: #E6F0EC;
+  --text-muted: #93A8A1;
+  --text-faint: #6B847C;
+  --accent: #2D9D7C;
+  --accent-hi: #4FBE9C;
+  --accent-soft: rgba(45, 157, 124, 0.14);
+  --success: #5FE3B5;
   --radius: 12px;
   --radius-lg: 20px;
   --radius-sm: 8px;
   --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.35);
-  --shadow-glow: 0 0 80px rgba(59, 130, 246, 0.25);
+  --shadow-glow: 0 0 80px rgba(45, 157, 124, 0.3);
   --container: 1120px;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
@@ -72,7 +72,7 @@ section { padding: 96px 0; }
   gap: 10px;
   padding: 6px 14px;
   background: var(--accent-soft);
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  border: 1px solid rgba(45, 157, 124, 0.3);
   border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 13px;
@@ -118,9 +118,9 @@ section { padding: 96px 0; }
 .btn-primary {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 6px 24px rgba(45, 157, 124, 0.4);
 }
-.btn-primary:hover { background: var(--accent-hi); color: #fff; box-shadow: 0 8px 32px rgba(59, 130, 246, 0.5); }
+.btn-primary:hover { background: var(--accent-hi); color: #fff; box-shadow: 0 8px 32px rgba(45, 157, 124, 0.55); }
 .btn-ghost {
   background: transparent;
   color: var(--text);
@@ -224,7 +224,7 @@ section { padding: 96px 0; }
   top: -200px; left: 50%;
   transform: translateX(-50%);
   width: 900px; height: 600px;
-  background: radial-gradient(ellipse at center, rgba(59,130,246,0.18) 0%, transparent 60%);
+  background: radial-gradient(ellipse at center, rgba(45,157,124,0.22) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -293,8 +293,8 @@ section { padding: 96px 0; }
   font-family: var(--font-mono);
   font-size: 13px;
   background-image:
-    linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
+    linear-gradient(rgba(45,157,124,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45,157,124,0.07) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
@@ -463,9 +463,9 @@ section { padding: 96px 0; }
   position: relative;
   aspect-ratio: 4 / 3;
   background:
-    linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px) 0 0 / 28px 28px,
-    radial-gradient(ellipse at 50% 40%, rgba(59,130,246,0.12), transparent 60%),
+    linear-gradient(rgba(45,157,124,0.07) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, rgba(45,157,124,0.07) 1px, transparent 1px) 0 0 / 28px 28px,
+    radial-gradient(ellipse at 50% 40%, rgba(45,157,124,0.14), transparent 60%),
     #0A1124;
 }
 .graph-illu .node {
@@ -489,7 +489,7 @@ section { padding: 96px 0; }
   box-shadow: 0 0 8px var(--accent);
 }
 .graph-illu .node.start::before { background: var(--success); box-shadow: 0 0 8px var(--success); }
-.graph-illu .node.out::before { background: #A78BFA; box-shadow: 0 0 8px #A78BFA; }
+.graph-illu .node.out::before { background: #F5C26B; box-shadow: 0 0 8px #F5C26B; }
 
 /* ===== AI prompt illustration ===== */
 .ai-illu {
