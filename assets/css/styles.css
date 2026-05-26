@@ -353,6 +353,61 @@ section { padding: 96px 0; }
   background-size: 32px 32px;
 }
 
+/* ===== Inline SVG mockups ===== */
+.window-body--mockup { aspect-ratio: auto; background: var(--bg-deep); }
+.window-body--mockup .mockup { width: 100%; height: auto; display: block; }
+
+/* Hero mockup: bounding box pulse, dashed flow, check pop-in */
+.mockup-hero .mk-box { transform-origin: center; transform-box: fill-box; animation: mk-pulse 2.6s ease-in-out infinite; }
+.mockup-hero .mk-box-2 { animation-delay: 0.4s; }
+.mockup-hero .mk-box-3 { animation-delay: 0.8s; }
+.mockup-hero .mk-box-4 { animation-delay: 1.2s; }
+
+.mockup-hero .mk-flow path {
+  stroke-dasharray: 5 5;
+  animation: mk-flow 3s linear infinite;
+}
+.mockup-hero .mk-flow path:nth-child(2) { animation-delay: 0.25s; }
+.mockup-hero .mk-flow path:nth-child(3) { animation-delay: 0.5s; }
+.mockup-hero .mk-flow path:nth-child(4) { animation-delay: 0.75s; }
+
+.mockup-hero .mk-check {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: mk-pop 4s ease-in-out infinite;
+}
+
+@keyframes mk-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+@keyframes mk-flow {
+  to { stroke-dashoffset: -20; }
+}
+@keyframes mk-pop {
+  0%, 10%, 90%, 100% { opacity: 0; transform: scale(0.6); }
+  20%, 80%           { opacity: 1; transform: scale(1); }
+}
+
+/* Graph mockup: node hover-friendly idle glow on final node */
+.mockup-graph .mk-node-final rect:first-of-type {
+  animation: mk-glow 3.2s ease-in-out infinite;
+}
+@keyframes mk-glow {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(45,157,124,0)); }
+  50%      { filter: drop-shadow(0 0 12px rgba(79,190,156,0.7)); }
+}
+
+/* Reduce-motion override */
+@media (prefers-reduced-motion: reduce) {
+  .mockup-hero .mk-box,
+  .mockup-hero .mk-flow path,
+  .mockup-hero .mk-check,
+  .mockup-graph .mk-node-final rect:first-of-type { animation: none !important; }
+  .mockup-hero .mk-box { opacity: 0.85; }
+  .mockup-hero .mk-check { opacity: 1; transform: none; }
+}
+
 /* ===== Features ===== */
 .features { background: var(--bg-elev); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
 .features-grid {
