@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>DocuMiner — Estrai dati da PDF, senza compromessi</title>
+  <meta name="description" content="DocuMiner è la piattaforma desktop italiana per estrarre dati strutturati da PDF: template visuali, OCR, batch processing, scripting Python e SQL data browser. Per Windows 10/11." />
+  <meta name="theme-color" content="#0B1220" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DocuMiner — Estrai dati da PDF, senza compromessi" />
+  <meta property="og:description" content="Template visuali, OCR, batch e SQL: trasforma documenti PDF in dati pronti all'uso. Per Windows 10/11." />
+  <meta property="og:url" content="https://robyferro.github.io/Payslippy-Releases/" />
+  <meta property="og:image" content="https://robyferro.github.io/Payslippy-Releases/assets/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ===== Top bar ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="#" class="brand" aria-label="DocuMiner — home">
+      <svg class="brand-logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="26" height="26" rx="6" fill="#3B82F6"/>
+        <path d="M10 9h7a6 6 0 0 1 6 6v2a6 6 0 0 1-6 6h-7V9z" fill="#0B1220"/>
+        <rect x="13" y="13" width="6" height="2" rx="1" fill="#3B82F6"/>
+        <rect x="13" y="17" width="6" height="2" rx="1" fill="#3B82F6"/>
+      </svg>
+      <span>DocuMiner</span>
+    </a>
+
+    <nav aria-label="Navigazione principale">
+      <ul class="nav-links">
+        <li><a href="#funzionalita">Funzionalità</a></li>
+        <li><a href="#come-funziona">Come funziona</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://github.com/RobyFerro/Payslippy-Releases/releases" target="_blank" rel="noopener">Changelog</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar-cta">
+      <a class="icon-link" href="https://github.com/RobyFerro/Payslippy-Releases" target="_blank" rel="noopener" aria-label="Repository GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.01c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18.91-.25 1.89-.38 2.86-.39.97.01 1.95.14 2.86.39 2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.77 1.06.77 2.14v3.17c0 .31.21.68.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a>
+      <a class="btn btn-primary" href="#download">Scarica</a>
+      <button class="nav-toggle" aria-label="Apri menu" aria-controls="nav-drawer" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <ul>
+      <li><a href="#funzionalita">Funzionalità</a></li>
+      <li><a href="#come-funziona">Come funziona</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://github.com/RobyFerro/Payslippy-Releases/releases" target="_blank" rel="noopener">Changelog</a></li>
+      <li><a href="#download">Scarica</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow hero-eyebrow">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="version-badge">v2026.5.27 · Windows 10/11</span>
+    </span>
+    <h1>Estrai dati da PDF.<br/><span class="accent">Senza compromessi.</span></h1>
+    <p class="hero-sub">
+      DocuMiner è la piattaforma desktop per trasformare documenti PDF in dati strutturati: disegna template visuali sui tuoi documenti, automatizza l'estrazione su cartelle intere e interroga i risultati come un database.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary btn-lg download-link" href="https://github.com/RobyFerro/Payslippy-Releases/releases/latest">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Scarica per Windows
+      </a>
+      <a class="btn btn-ghost btn-lg" href="#funzionalita">Vedi le funzionalità</a>
+    </div>
+    <p class="hero-micro">Gratis fino a 10 file · <a href="#faq">Confronta con il piano Pro</a></p>
+
+    <div class="hero-visual">
+      <div class="window-frame">
+        <div class="window-titlebar" aria-hidden="true">
+          <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+          <span class="window-title">DocuMiner — busta_paga_2026_01.pdf</span>
+        </div>
+        <div class="window-body">
+          <img src="assets/img/hero-screen.png" alt="Schermata di DocuMiner con un PDF aperto e bounding box colorati che evidenziano i campi da estrarre" onerror="this.remove()" />
+          <div class="placeholder" aria-hidden="true">screenshot canvas con bounding box</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Funzionalità ===== -->
+<section class="features" id="funzionalita">
+  <div class="container">
+    <h2 class="section-title">Tutto quello che serve per estrarre dati da PDF</h2>
+    <p class="section-lead">Otto strumenti integrati che coprono l'intero ciclo: dalla definizione del template fino all'analisi finale.</p>
+
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <h3>Template visuali</h3>
+        <p>Disegna bounding box direttamente sul PDF: nessun XML, nessuna configurazione manuale.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>Tre metodi di estrazione</h3>
+        <p>Testo nativo, OCR italiano/inglese e tabella AI: usa il metodo migliore per ogni campo.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Estrazione batch</h3>
+        <p>Processa intere cartelle di PDF in un click e ottieni un CSV pronto da importare.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M6 9v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/><line x1="12" y1="14" x2="12" y2="15"/></svg>
+        </div>
+        <h3>Programmazione a grafo</h3>
+        <p>Trasforma i dati estratti con un editor visuale a nodi: niente codice, logica chiara.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Funzioni Python</h3>
+        <p>Inserisci script Python per trasformazioni custom e integrazioni con altri sistemi.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"/></svg>
+        </div>
+        <h3>Data Browser SQL</h3>
+        <p>Interroga tutti i dati estratti con query SQL, come in un vero client database.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <h3>Moduli riutilizzabili</h3>
+        <p>Organizza template in progetti e moduli condivisibili tra documenti simili.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"/></svg>
+        </div>
+        <h3>Assistente AI</h3>
+        <p>Genera script di estrazione e trasformazione partendo da una descrizione in linguaggio naturale.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Come funziona ===== -->
+<section id="come-funziona">
+  <div class="container">
+    <h2 class="section-title">Come funziona</h2>
+    <p class="section-lead">Tre passi dal documento ai dati strutturati.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Definisci il template</h3>
+        <p>Apri un PDF di esempio e disegna i bounding box sui campi che vuoi estrarre. Scegli per ognuno il metodo: testo, OCR o tabella AI.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Estrai in batch</h3>
+        <p>Punta DocuMiner a una cartella di documenti simili: il template viene applicato a ogni file in automatico.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Esporta o interroga</h3>
+        <p>Esporta in CSV per Excel/Power BI, oppure interroga i risultati direttamente con SQL nel data browser integrato.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Showcase ===== -->
+<section style="background: var(--bg-elev); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft);">
+  <div class="container">
+    <div class="showcase-grid">
+      <div>
+        <h2>Pensato per chi gestisce centinaia di documenti</h2>
+        <p>Buste paga, fatture, polizze, certificati: ogni documento ha la sua struttura, ma con DocuMiner basta definirla una volta. Da lì in poi è solo un drag-and-drop di cartelle.</p>
+        <p>Tutto resta in locale: i tuoi PDF non lasciano mai la tua macchina, salvo che tu non scelga esplicitamente di usare un servizio AI per l'estrazione tabellare.</p>
+      </div>
+      <div class="showcase-visual">
+        <div class="window-frame" style="box-shadow: none; border: none; border-radius: var(--radius-lg);">
+          <div class="window-titlebar" aria-hidden="true">
+            <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+            <span class="window-title">Data Browser — SELECT * FROM buste_paga</span>
+          </div>
+          <div class="window-body">
+            <img src="assets/img/showcase-sql.png" alt="Data Browser di DocuMiner che mostra il risultato di una query SQL su una tabella di buste paga estratte" onerror="this.remove()" />
+            <div class="placeholder" aria-hidden="true">screenshot Data Browser SQL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Download ===== -->
+<section class="download" id="download">
+  <div class="container">
+    <div class="download-card">
+      <span class="eyebrow">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="version-badge">v2026.5.27</span>
+      </span>
+      <h2>Scarica DocuMiner</h2>
+      <p>Installer per Windows 10 (build 19041+) e Windows 11. Runtime .NET 10 incluso.</p>
+      <a class="btn btn-primary btn-lg download-link" href="https://github.com/RobyFerro/Payslippy-Releases/releases/latest">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Scarica per Windows
+      </a>
+      <div class="download-meta">
+        <span class="release-date">Release pubblicato sulla pagina GitHub del progetto.</span>
+        <a href="https://github.com/RobyFerro/Payslippy-Releases/releases" target="_blank" rel="noopener">Tutti i release →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="container">
+    <h2 class="section-title">Domande frequenti</h2>
+    <p class="section-lead">Le risposte alle domande che riceviamo più spesso. Non trovi quello che cerchi? <a href="https://github.com/RobyFerro/Payslippy-Releases/issues/new" target="_blank" rel="noopener">Apri una issue</a>.</p>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>DocuMiner è gratuito?</summary>
+        <div class="faq-answer">
+          Sì, la versione base è gratuita e permette di elaborare fino a 10 file per batch con fino a 5 nodi nei grafi di trasformazione. La versione Pro rimuove ogni limite.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>I miei PDF vengono inviati a server esterni?</summary>
+        <div class="faq-answer">
+          No, di default tutta l'estrazione avviene in locale sul tuo computer. Solo se attivi esplicitamente l'estrazione tabellare via AI o l'assistente AI viene inviata una porzione minima di dati al provider selezionato (schema e campioni limitati, mai i PDF originali).
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>L'OCR supporta l'italiano?</summary>
+        <div class="faq-answer">
+          Sì, l'OCR integrato è quello nativo di Windows e supporta sia italiano sia inglese, senza necessità di pacchetti aggiuntivi.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Come funziona l'aggiornamento automatico?</summary>
+        <div class="faq-answer">
+          DocuMiner controlla periodicamente questo stesso repository GitHub e propone l'aggiornamento quando è disponibile una nuova versione. Puoi accettare o rimandare: nessun download automatico in background.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Posso usarlo offline?</summary>
+        <div class="faq-answer">
+          Sì, tutte le funzioni base (template, estrazione testo, OCR, batch, esportazione CSV, SQL) funzionano completamente offline. Solo le funzioni AI richiedono connessione.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Funziona su Mac o Linux?</summary>
+        <div class="faq-answer">
+          Al momento no: DocuMiner è una applicazione Windows nativa (WPF) e dipende da componenti specifici della piattaforma (OCR di Windows, rendering PDF). Una versione cross-platform non è in roadmap.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand footer-col">
+        <a href="#" class="brand" aria-label="DocuMiner — home">
+          <svg class="brand-logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="26" height="26" rx="6" fill="#3B82F6"/>
+            <path d="M10 9h7a6 6 0 0 1 6 6v2a6 6 0 0 1-6 6h-7V9z" fill="#0B1220"/>
+            <rect x="13" y="13" width="6" height="2" rx="1" fill="#3B82F6"/>
+            <rect x="13" y="17" width="6" height="2" rx="1" fill="#3B82F6"/>
+          </svg>
+          <span>DocuMiner</span>
+        </a>
+        <p>Trasforma PDF in dati strutturati. Per Windows 10/11, sviluppato in Italia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Prodotto</h4>
+        <ul>
+          <li><a href="#funzionalita">Funzionalità</a></li>
+          <li><a href="#download">Scarica</a></li>
+          <li><a href="https://github.com/RobyFerro/Payslippy-Releases/releases" target="_blank" rel="noopener">Changelog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Risorse</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://github.com/RobyFerro/Payslippy-Releases/issues/new" target="_blank" rel="noopener">Segnala un bug</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="https://github.com/RobyFerro" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Roberto Ferro. Tutti i diritti riservati.</span>
+      <span>Costruito con HTML, CSS e zero framework.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
