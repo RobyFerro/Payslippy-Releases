@@ -40,8 +40,8 @@
       <ul class="nav-links">
         <li><a href="#funzionalita">Funzionalità</a></li>
         <li><a href="#come-funziona">Come funziona</a></li>
+        <li><a href="#automazione">Automazione &amp; AI</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="https://github.com/RobyFerro/Payslippy-Releases/releases" target="_blank" rel="noopener">Changelog</a></li>
       </ul>
     </nav>
 
@@ -60,8 +60,8 @@
     <ul>
       <li><a href="#funzionalita">Funzionalità</a></li>
       <li><a href="#come-funziona">Come funziona</a></li>
+      <li><a href="#automazione">Automazione &amp; AI</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="https://github.com/RobyFerro/Payslippy-Releases/releases" target="_blank" rel="noopener">Changelog</a></li>
       <li><a href="#download">Scarica</a></li>
     </ul>
   </div>
@@ -76,7 +76,7 @@
     </span>
     <h1>Estrai dati da PDF.<br/><span class="accent">Senza compromessi.</span></h1>
     <p class="hero-sub">
-      DocuMiner è la piattaforma desktop per trasformare documenti PDF in dati strutturati: disegna template visuali sui tuoi documenti, automatizza l'estrazione su cartelle intere e interroga i risultati come un database.
+      DocuMiner è la piattaforma desktop per trasformare documenti PDF in dati strutturati: template visuali, estrazione batch, grafi di programmazione a nodi e un assistente AI che li costruisce per te partendo da una descrizione in italiano.
     </p>
     <div class="hero-ctas">
       <a class="btn btn-primary btn-lg download-link" href="https://github.com/RobyFerro/Payslippy-Releases/releases/latest">
@@ -220,6 +220,134 @@
           <div class="window-body">
             <img src="assets/img/showcase-sql.png" alt="Data Browser di DocuMiner che mostra il risultato di una query SQL su una tabella di buste paga estratte" onerror="this.remove()" />
             <div class="placeholder" aria-hidden="true">screenshot Data Browser SQL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Deep dive: Graph + AI ===== -->
+<section class="deep-dive" id="automazione">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Oltre l'estrazione: automazione visuale e AI</h2>
+      <p class="section-lead">Due strumenti integrati che trasformano i dati grezzi in workflow completi, senza scrivere una riga di codice se non vuoi.</p>
+    </div>
+
+    <!-- Block 1: Programming Graph Engine -->
+    <div class="dd-block">
+      <div class="dd-text">
+        <span class="dd-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M6 8.5v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3"/><line x1="12" y1="13.5" x2="12" y2="15.5"/></svg>
+          Programming Graph Engine
+        </span>
+        <h3>Costruisci pipeline di trasformazione a nodi</h3>
+        <p>Dopo l'estrazione, ogni template può avere un suo grafo di elaborazione. Trascini i nodi sul canvas, colleghi porte di controllo e di dato, ed esegui — niente compilazione, niente file di configurazione.</p>
+        <p>I tipi di dato sono colorati (numero blu, stringa verde, booleano arancione, lista viola, tabella ciano) così gli errori di collegamento si vedono prima ancora di lanciare il grafo.</p>
+
+        <ul class="dd-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>23+ nodi pronti</strong> — Start/Stop, branch if/else, sequenze, loop, foreach, raccolta parallela (Join), variabili globali.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>60+ funzioni built-in</strong> — matematica, stringhe, conversioni, accesso a campi e query SQL sui dati estratti.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Nodi Python</strong> — quando serve logica custom, inserisci uno script Python con i suoi input/output tipizzati.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Modalità Test e Run</strong> — dry-run con badge pass/fail sui nodi, oppure esecuzione completa con export CSV/Excel su disco.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="dd-visual">
+        <div class="window-frame">
+          <div class="window-titlebar" aria-hidden="true">
+            <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+            <span class="window-title">Programmazione — busta_paga.graph</span>
+          </div>
+          <div class="window-body">
+            <div class="graph-illu" aria-hidden="true">
+              <div class="node start" style="top: 12%; left: 8%;">Start</div>
+              <div class="node" style="top: 12%; left: 38%;">Field · netto</div>
+              <div class="node" style="top: 42%; left: 24%;">Branch · &gt; 0</div>
+              <div class="node" style="top: 42%; left: 60%;">SQL Query</div>
+              <div class="node" style="top: 72%; left: 18%;">Python · normalizza()</div>
+              <div class="node out" style="top: 72%; left: 60%;">Export CSV</div>
+              <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none" viewBox="0 0 400 300" preserveAspectRatio="none">
+                <path d="M 70 50 C 110 50, 130 50, 170 50" stroke="#3B82F6" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M 140 70 C 140 110, 140 130, 140 150" stroke="#3B82F6" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M 240 70 C 270 110, 270 130, 260 150" stroke="#A78BFA" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M 140 170 C 140 210, 140 230, 130 240" stroke="#22C55E" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M 260 170 C 260 210, 260 230, 270 240" stroke="#A78BFA" stroke-width="1.5" fill="none" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 2: AI Assistant -->
+    <div class="dd-block reverse">
+      <div class="dd-text">
+        <span class="dd-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"/></svg>
+          Assistente AI integrato
+        </span>
+        <h3>Descrivilo a parole. Il grafo lo costruisce l'AI.</h3>
+        <p>Collega Claude, OpenAI o Gemini con la tua chiave API e chiedi all'assistente di generare grafi di estrazione, query SQL e trasformazioni partendo da una domanda in italiano. Il risultato è un grafo modificabile, non una black box.</p>
+        <p>All'AI vengono inviati <strong>solo lo schema</strong> delle tabelle del progetto e, opzionalmente, un campione configurabile di righe (0–20): i PDF originali e i dati sensibili restano sulla tua macchina.</p>
+
+        <div class="providers" aria-label="Provider AI supportati">
+          <span class="provider-chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="3"/></svg>Claude</span>
+          <span class="provider-chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="3"/></svg>OpenAI</span>
+          <span class="provider-chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="3"/></svg>Google Gemini</span>
+        </div>
+
+        <ul class="dd-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Privacy first</strong> — solo schema e campioni opzionali, mai i PDF. Chiavi API crittografate via DPAPI di Windows.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Risposte verificabili</strong> — l'AI restituisce un grafo JSON che diventa nodi reali. Lo vedi, lo modifichi, lo esegui.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Catalogo nodi nel prompt</strong> — l'assistente conosce le 60+ funzioni disponibili e le combina coerentemente.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Tabella AI per documenti complessi</strong> — estrazione tabellare da PDF con layout irregolari quando OCR e regex non bastano.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="dd-visual">
+        <div class="window-frame">
+          <div class="window-titlebar" aria-hidden="true">
+            <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+            <span class="window-title">Assistente AI</span>
+          </div>
+          <div class="window-body">
+            <div class="ai-illu" aria-hidden="true">
+              <div class="ai-prompt">
+                <span class="label">Prompt</span>
+                Calcola il netto medio per dipendente nell'ultimo trimestre ed esportalo in CSV.
+              </div>
+              <div class="ai-response">
+                <span class="label">Grafo generato</span>
+                → <code>SQL Query</code> sulle buste paga<br/>
+                → <code>Group By</code> dipendente_id<br/>
+                → <code>AVG</code> sul campo netto<br/>
+                → <code>Export CSV</code> "netti_q.csv"<span class="typing-cursor"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
